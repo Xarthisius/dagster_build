@@ -1,9 +1,9 @@
 # Dagster libraries to run both dagster-webserver and the dagster-daemon. Does not
 # need to have access to any pipeline code.
 
-FROM python:3.10-slim
+FROM python:3.12-slim
 
-ENV DAGSTER_VERSION=1.5.11 DAGSTER_LIBS_VERSION=0.21.11 DAGSTER_HOME=/opt/dagster/dagster_home/
+ENV DAGSTER_VERSION=1.8.12 DAGSTER_LIBS_VERSION=0.24.12 DAGSTER_HOME=/opt/dagster/dagster_home/
 
 RUN mkdir -p $DAGSTER_HOME
 
